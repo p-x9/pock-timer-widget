@@ -6,9 +6,27 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		194F139FC15BCA3A52951DE1 /* Pods_pock_timer_widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBAD23C21A7DE0F75E55FC /* Pods_pock_timer_widget.framework */; };
+		422D77D925F51AE000EADDEF /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D77D825F51AE000EADDEF /* TimerWidget.swift */; };
+		422D780425F525EF00EADDEF /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D780325F525EF00EADDEF /* TimerView.swift */; };
+		4254F8E425F55E8200DD1538 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4254F8E325F55E8200DD1538 /* Media.xcassets */; };
+		4254F92125F5F1DD00DD1538 /* TimerTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */; };
+		4254F93425F637B700DD1538 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F93325F637B700DD1538 /* TimerState.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		422D77CC25F51A3900EADDEF /* pock-timer-widget.pock */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pock-timer-widget.pock"; sourceTree = BUILT_PRODUCTS_DIR; };
 		422D77CF25F51A3900EADDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		422D77D725F51AE000EADDEF /* pock-timer-widget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pock-timer-widget-Bridging-Header.h"; sourceTree = "<group>"; };
+		422D77D825F51AE000EADDEF /* TimerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWidget.swift; sourceTree = "<group>"; };
+		422D780325F525EF00EADDEF /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		4254F8E325F55E8200DD1538 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTextLabel.swift; sourceTree = "<group>"; };
+		4254F93325F637B700DD1538 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		91DBAD23C21A7DE0F75E55FC /* Pods_pock_timer_widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pock_timer_widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.debug.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.debug.xcconfig"; sourceTree = "<group>"; };
+		F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.release.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194F139FC15BCA3A52951DE1 /* Pods_pock_timer_widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,6 +46,8 @@
 			children = (
 				422D77CE25F51A3900EADDEF /* pock-timer-widget */,
 				422D77CD25F51A3900EADDEF /* Products */,
+				94940CE4CB161211758969E4 /* Pods */,
+				51C4FDFF42D1CF6423C91DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -42,8 +63,47 @@
 			isa = PBXGroup;
 			children = (
 				422D77CF25F51A3900EADDEF /* Info.plist */,
+				4254F8E325F55E8200DD1538 /* Media.xcassets */,
+				422D77D625F51A6F00EADDEF /* Sources */,
 			);
 			path = "pock-timer-widget";
+			sourceTree = "<group>";
+		};
+		422D77D625F51A6F00EADDEF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				422D77D825F51AE000EADDEF /* TimerWidget.swift */,
+				422D77E525F51FEF00EADDEF /* View */,
+				422D77D725F51AE000EADDEF /* pock-timer-widget-Bridging-Header.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		422D77E525F51FEF00EADDEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				422D780325F525EF00EADDEF /* TimerView.swift */,
+				4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */,
+				4254F93325F637B700DD1538 /* TimerState.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51C4FDFF42D1CF6423C91DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DBAD23C21A7DE0F75E55FC /* Pods_pock_timer_widget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94940CE4CB161211758969E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */,
+				F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 422D77D225F51A3900EADDEF /* Build configuration list for PBXNativeTarget "pock-timer-widget" */;
 			buildPhases = (
+				170EC9A64BFDA8CD739637D3 /* [CP] Check Pods Manifest.lock */,
 				422D77C825F51A3900EADDEF /* Sources */,
 				422D77C925F51A3900EADDEF /* Frameworks */,
 				422D77CA25F51A3900EADDEF /* Resources */,
+				422D77E025F51BD400EADDEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -76,6 +138,7 @@
 				TargetAttributes = {
 					422D77CB25F51A3900EADDEF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -102,16 +165,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4254F8E425F55E8200DD1538 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		170EC9A64BFDA8CD739637D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pock-timer-widget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		422D77E025F51BD400EADDEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		422D77C825F51A3900EADDEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422D77D925F51AE000EADDEF /* TimerWidget.swift in Sources */,
+				4254F93425F637B700DD1538 /* TimerState.swift in Sources */,
+				422D780425F525EF00EADDEF /* TimerView.swift in Sources */,
+				4254F92125F5F1DD00DD1538 /* TimerTextLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,28 +341,47 @@
 		};
 		422D77D325F51A3900EADDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "pock-timer-widget/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.pock-timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pock-timer-widget/Sources/pock-timer-widget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Debug;
 		};
 		422D77D425F51A3900EADDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "pock-timer-widget/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.pock-timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pock-timer-widget/Sources/pock-timer-widget-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Release;
