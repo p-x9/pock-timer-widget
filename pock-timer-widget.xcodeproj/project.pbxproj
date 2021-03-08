@@ -24,6 +24,7 @@
 		4254F8E325F55E8200DD1538 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTextLabel.swift; sourceTree = "<group>"; };
 		4254F93325F637B700DD1538 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		4254F93825F67ABA00DD1538 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		91DBAD23C21A7DE0F75E55FC /* Pods_pock_timer_widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pock_timer_widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.debug.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.debug.xcconfig"; sourceTree = "<group>"; };
 		F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.release.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		422D77C325F51A3900EADDEF = {
 			isa = PBXGroup;
 			children = (
+				4254F93825F67ABA00DD1538 /* README.md */,
 				422D77CE25F51A3900EADDEF /* pock-timer-widget */,
 				422D77CD25F51A3900EADDEF /* Products */,
 				94940CE4CB161211758969E4 /* Pods */,
@@ -344,8 +346,9 @@
 			baseConfigurationReference = AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "pock-timer-widget/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,8 +356,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.pock-timer-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "pock-timer-widget/Sources/pock-timer-widget-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -368,8 +372,9 @@
 			baseConfigurationReference = F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "pock-timer-widget/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -377,8 +382,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.pock-timer-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "pock-timer-widget/Sources/pock-timer-widget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
