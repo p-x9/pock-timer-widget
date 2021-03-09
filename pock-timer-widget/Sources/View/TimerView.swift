@@ -9,8 +9,6 @@ import Cocoa
 import SnapKit
 import PockKit
 
-// public typealias TimerTextField = NSTextField
-
 public class TimerView: NSView {
 
     public var didTap: (() -> Void)?
@@ -49,6 +47,15 @@ public class TimerView: NSView {
     public var iconImage: NSImage? {
         didSet {
             self.imageView.image = iconImage
+        }
+    }
+    public var isHighlighted = false {
+        didSet {
+            if isHighlighted {
+                self.layer?.backgroundColor = NSColor.controlColor.highlight(withLevel: 0.25)?.cgColor
+            } else {
+                self.layer?.backgroundColor = NSColor.controlColor.cgColor
+            }
         }
     }
 
@@ -111,12 +118,12 @@ public class TimerView: NSView {
     override public func touchesBegan(with event: NSEvent) {
         super.touchesBegan(with: event)
 
-        self.layer?.backgroundColor = NSColor.controlColor.highlight(withLevel: 0.25)?.cgColor
+        self.isHighlighted = true
     }
     override public func touchesEnded(with event: NSEvent) {
         super.touchesEnded(with: event)
 
-        self.layer?.backgroundColor = NSColor.controlColor.cgColor
+        self.isHighlighted = false
     }
 
     func start() {
