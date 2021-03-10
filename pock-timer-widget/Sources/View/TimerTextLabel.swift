@@ -19,7 +19,7 @@ public class TimerTextLabel: NSView {
     public var textState: TextState = .on
     public var state: TimerState = .stopping
 
-    var time: TimeInterval = 10000.0
+    var time: TimeInterval = 0.0
 
     public var stringValue: String? {
         didSet {
