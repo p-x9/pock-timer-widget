@@ -150,7 +150,7 @@ public class TimerView: NSView {
         } else {
             self.start()
         }
-        self.layer?.backgroundColor = NSColor.controlColor.cgColor
+        self.layer?.backgroundColor = NSColor.touchBarBackgroundColor.cgColor
 
         guard let didTap = didTap else {
             return
@@ -164,7 +164,7 @@ public class TimerView: NSView {
         if self.state == .stopping {
             self.reset()
         }
-        self.layer?.backgroundColor = NSColor.controlColor.cgColor
+        self.layer?.backgroundColor = NSColor.touchBarBackgroundColor.cgColor
 
         guard let didLongPress = didLongPress else {
             return
