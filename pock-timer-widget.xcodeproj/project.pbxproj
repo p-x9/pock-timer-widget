@@ -13,6 +13,7 @@
 		4254F8E425F55E8200DD1538 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4254F8E325F55E8200DD1538 /* Media.xcassets */; };
 		4254F92125F5F1DD00DD1538 /* TimerTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */; };
 		4254F93425F637B700DD1538 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F93325F637B700DD1538 /* TimerState.swift */; };
+		425AAE64262C1D9000382E24 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425AAE63262C1D9000382E24 /* NSColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTextLabel.swift; sourceTree = "<group>"; };
 		4254F93325F637B700DD1538 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 		4254F93825F67ABA00DD1538 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		425AAE63262C1D9000382E24 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 		91DBAD23C21A7DE0F75E55FC /* Pods_pock_timer_widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pock_timer_widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.debug.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.debug.xcconfig"; sourceTree = "<group>"; };
 		F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.release.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				422D77D825F51AE000EADDEF /* TimerWidget.swift */,
 				422D77E525F51FEF00EADDEF /* View */,
+				425AAE62262C1D7200382E24 /* Extension */,
 				422D77D725F51AE000EADDEF /* pock-timer-widget-Bridging-Header.h */,
 			);
 			path = Sources;
@@ -89,6 +92,14 @@
 				4254F93325F637B700DD1538 /* TimerState.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		425AAE62262C1D7200382E24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				425AAE63262C1D9000382E24 /* NSColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		51C4FDFF42D1CF6423C91DE9 /* Frameworks */ = {
@@ -241,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				422D77D925F51AE000EADDEF /* TimerWidget.swift in Sources */,
+				425AAE64262C1D9000382E24 /* NSColor.swift in Sources */,
 				4254F93425F637B700DD1538 /* TimerState.swift in Sources */,
 				422D780425F525EF00EADDEF /* TimerView.swift in Sources */,
 				4254F92125F5F1DD00DD1538 /* TimerTextLabel.swift in Sources */,

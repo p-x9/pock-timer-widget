@@ -52,9 +52,9 @@ public class TimerView: NSView {
     public var isHighlighted = false {
         didSet {
             if isHighlighted {
-                self.layer?.backgroundColor = NSColor.controlColor.highlight(withLevel: 0.25)?.cgColor
+                self.layer?.backgroundColor = NSColor.touchBarBackgroundColor.highlight(withLevel: 0.25)?.cgColor
             } else {
-                self.layer?.backgroundColor = NSColor.controlColor.cgColor
+                self.layer?.backgroundColor = NSColor.touchBarBackgroundColor.cgColor
             }
         }
     }
@@ -64,7 +64,7 @@ public class TimerView: NSView {
 
         self.wantsLayer = true
         self.layer?.cornerRadius = 5
-        self.layer?.backgroundColor = NSColor.controlColor.cgColor
+        self.layer?.backgroundColor = NSColor.touchBarBackgroundColor.cgColor
 
         addSubview(imageView)
         addSubview(titleView)
