@@ -9,7 +9,7 @@ import Foundation
 import PockKit
 
 class TimerWidget: PKWidget {
-    var identifier: NSTouchBarItem.Identifier = NSTouchBarItem.Identifier(rawValue: "TimerWidget")
+    static var identifier: String = "\(TimerWidget.self)"
     var customizationLabel: String = "Timer"
     var view: NSView!
 
