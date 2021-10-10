@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420460652712EE1D0052B603 /* PockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 420460642712EE1D0052B603 /* PockKit */; };
+		420460682712EE310052B603 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 420460672712EE310052B603 /* Defaults */; };
+		4204606B2712EE4B0052B603 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4204606A2712EE4B0052B603 /* SnapKit */; };
 		422D77D925F51AE000EADDEF /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D77D825F51AE000EADDEF /* TimerWidget.swift */; };
 		422D780425F525EF00EADDEF /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D780325F525EF00EADDEF /* TimerView.swift */; };
 		4254F8E425F55E8200DD1538 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4254F8E325F55E8200DD1538 /* Media.xcassets */; };
 		4254F92125F5F1DD00DD1538 /* TimerTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F92025F5F1DD00DD1538 /* TimerTextLabel.swift */; };
 		4254F93425F637B700DD1538 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254F93325F637B700DD1538 /* TimerState.swift */; };
 		425AAE64262C1D9000382E24 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425AAE63262C1D9000382E24 /* NSColor.swift */; };
-		69DB722F0FC04A77EFB670A0 /* libPods-pock-timer-widget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3AD418381806B106EDBB64 /* libPods-pock-timer-widget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,6 @@
 		4254F93325F637B700DD1538 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 		4254F93825F67ABA00DD1538 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		425AAE63262C1D9000382E24 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
-		AA3AD418381806B106EDBB64 /* libPods-pock-timer-widget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pock-timer-widget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.debug.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.debug.xcconfig"; sourceTree = "<group>"; };
-		F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock-timer-widget.release.xcconfig"; path = "Target Support Files/Pods-pock-timer-widget/Pods-pock-timer-widget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69DB722F0FC04A77EFB670A0 /* libPods-pock-timer-widget.a in Frameworks */,
+				4204606B2712EE4B0052B603 /* SnapKit in Frameworks */,
+				420460682712EE310052B603 /* Defaults in Frameworks */,
+				420460652712EE1D0052B603 /* PockKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +51,6 @@
 				4254F93825F67ABA00DD1538 /* README.md */,
 				422D77CE25F51A3900EADDEF /* pock-timer-widget */,
 				422D77CD25F51A3900EADDEF /* Products */,
-				94940CE4CB161211758969E4 /* Pods */,
-				51C4FDFF42D1CF6423C91DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,23 +101,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		51C4FDFF42D1CF6423C91DE9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AA3AD418381806B106EDBB64 /* libPods-pock-timer-widget.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		94940CE4CB161211758969E4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */,
-				F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,7 +108,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 422D77D225F51A3900EADDEF /* Build configuration list for PBXNativeTarget "pock-timer-widget" */;
 			buildPhases = (
-				170EC9A64BFDA8CD739637D3 /* [CP] Check Pods Manifest.lock */,
 				422D77C825F51A3900EADDEF /* Sources */,
 				422D77C925F51A3900EADDEF /* Frameworks */,
 				422D77CA25F51A3900EADDEF /* Resources */,
@@ -138,6 +119,11 @@
 			dependencies = (
 			);
 			name = "pock-timer-widget";
+			packageProductDependencies = (
+				420460642712EE1D0052B603 /* PockKit */,
+				420460672712EE310052B603 /* Defaults */,
+				4204606A2712EE4B0052B603 /* SnapKit */,
+			);
 			productName = "pock-timer-widget";
 			productReference = 422D77CC25F51A3900EADDEF /* pock-timer-widget.pock */;
 			productType = "com.apple.product-type.bundle";
@@ -165,6 +151,11 @@
 				Base,
 			);
 			mainGroup = 422D77C325F51A3900EADDEF;
+			packageReferences = (
+				420460632712EE1D0052B603 /* XCRemoteSwiftPackageReference "pockkit" */,
+				420460662712EE310052B603 /* XCRemoteSwiftPackageReference "Defaults" */,
+				420460692712EE4B0052B603 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 422D77CD25F51A3900EADDEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,28 +177,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		170EC9A64BFDA8CD739637D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pock-timer-widget-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		422D77E025F51BD400EADDEF /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,7 +344,6 @@
 		};
 		422D77D325F51A3900EADDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE780580A1F58FD6436BF025 /* Pods-pock-timer-widget.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -402,7 +370,6 @@
 		};
 		422D77D425F51A3900EADDEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F837C15DA24A17221F5862 /* Pods-pock-timer-widget.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -448,6 +415,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		420460632712EE1D0052B603 /* XCRemoteSwiftPackageReference "pockkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pock/pockkit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+		420460662712EE310052B603 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		420460692712EE4B0052B603 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		420460642712EE1D0052B603 /* PockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 420460632712EE1D0052B603 /* XCRemoteSwiftPackageReference "pockkit" */;
+			productName = PockKit;
+		};
+		420460672712EE310052B603 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 420460662712EE310052B603 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		4204606A2712EE4B0052B603 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 420460692712EE4B0052B603 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 422D77C425F51A3900EADDEF /* Project object */;
 }
